@@ -6,7 +6,7 @@ import Sobre from "./pages/Sobre.jsx";
 import Produtos from "./pages/Produtos/Produtos.jsx";
 import Contato from "./pages/Contato.jsx";
 import Faq from "./pages/Faq.jsx";
-import Planos from "./pages/Planos.jsx";
+import Planos from "./pages/Planos/Planos.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 function App() {
