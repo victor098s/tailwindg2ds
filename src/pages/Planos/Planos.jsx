@@ -39,7 +39,7 @@ function Planos() {
             key={plan.name}
             title={plan.name}
             description={plan.description}
-            buttonText="Assinar agora"
+            buttonText=""
             extra={
               <ul className="mt-6 space-y-3 text-slate-300">
                 {plan.features.map((feature) => (
