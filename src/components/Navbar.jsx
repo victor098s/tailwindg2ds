@@ -1,19 +1,14 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-function Header() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link
-          to="/"
-          className="flex items-center gap-3 text-xl font-black tracking-tight text-white"
-        >
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-orange-500 text-slate-950">
-            P
-          </span>
+        <Link to="/" className="flex items-center gap-3 text-xl font-black tracking-tight text-white">
+          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-orange-500 text-slate-950">P</span>
           PetLume
         </Link>
         <button
@@ -38,9 +33,7 @@ function Header() {
               to={to}
               className={({ isActive }) =>
                 `rounded-full px-4 py-2 text-sm font-semibold transition ${
-                  isActive
-                    ? "bg-orange-500 text-slate-950"
-                    : "text-slate-300 hover:bg-slate-900/80 hover:text-white"
+                  isActive ? "bg-orange-500 text-slate-950" : "text-slate-300 hover:bg-slate-900/80 hover:text-white"
                 }`
               }
             >
@@ -66,9 +59,7 @@ function Header() {
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `rounded-3xl px-4 py-3 text-sm font-semibold transition ${
-                    isActive
-                      ? "bg-orange-500 text-slate-950"
-                      : "text-slate-200 hover:bg-slate-900/80"
+                    isActive ? "bg-orange-500 text-slate-950" : "text-slate-200 hover:bg-slate-900/80"
                   }`
                 }
               >
@@ -82,4 +73,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
