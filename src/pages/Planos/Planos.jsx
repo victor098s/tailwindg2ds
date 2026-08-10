@@ -1,4 +1,4 @@
-import Card from "../components/Card.jsx";
+import Card from "../../components/Card.jsx";
 
 const plans = [
   {
@@ -29,17 +29,15 @@ function Planos() {
           <span className="inline-flex rounded-full bg-orange-500/10 px-4 py-2 text-sm font-semibold text-orange-200">
             Planos de mensalidade</span>
           <h1 className="text-4xl font-bold text-white">Escolha o plano perfeito para o seu pet.</h1>
-          <p className="max-w-3xl text-slate-300">Planos flexíveis com benefícios exclusivos para garantir mais saúde, conforto e economia mês a mês.</p>
+          <p className="max-w-3xl text-slate-300">Planos flexíveis com benefícios exclusivos para garantir mais saúde, conforto e economia mês a mês. Para assinar o plano, vá à unidade mais próxima.   </p>
         </div>
       </section>
-
       <section className="grid gap-6 lg:grid-cols-3">
         {plans.map((plan) => (
           <Card
             key={plan.name}
             title={plan.name}
             description={plan.description}
-            buttonText=""
             extra={
               <ul className="mt-6 space-y-3 text-slate-300">
                 {plan.features.map((feature) => (
@@ -50,6 +48,8 @@ function Planos() {
           />
         ))}
       </section>
+
+
     </div>
   );
 }
