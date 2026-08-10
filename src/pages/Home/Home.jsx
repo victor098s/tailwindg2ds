@@ -6,7 +6,7 @@ const services = [
   {
     title: "Banho e Tosa",
     description: "Tratamento completo com carinho e produtos premium para pelagem brilhante.",
-    icon: PawPrint,
+    icon: PawPrint,  
   },
   {
     title: "Consultas Nutricionais",
